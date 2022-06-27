@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E7ED7152-04AE-44FC-A264-721CC66E680A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bunife_test</RootNamespace>
+    <AssemblyName>Bunife test</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\..\Desktop\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Banka.cs" />
+    <Compile Include="BireyselMusteri.cs" />
+    <Compile Include="doviz.cs" />
+    <Compile Include="frmGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGiris.Designer.cs">
+      <DependentUpon>frmGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMusteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMusteri.designer.cs">
+      <DependentUpon>frmMusteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMusteriGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMusteriGiris.designer.cs">
+      <DependentUpon>frmMusteriGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUye.Designer.cs">
+      <DependentUpon>frmUye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmYonetici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmYonetici.Designer.cs">
+      <DependentUpon>frmYonetici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmYoneticiGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmYoneticiGiris.designer.cs">
+      <DependentUpon>frmYoneticiGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gelirGiderRaporu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="gelirGiderRaporu.Designer.cs">
+      <DependentUpon>gelirGiderRaporu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="havaleYap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="havaleYap.designer.cs">
+      <DependentUpon>havaleYap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hesap.cs" />
+    <Compile Include="hesapEkle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="hesapEkle.Designer.cs">
+      <DependentUpon>hesapEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HesapOzeti.cs" />
+    <Compile Include="hesapSil.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="hesapSil.Designer.cs">
+      <DependentUpon>hesapSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IHesap.cs" />
+    <Compile Include="Iletisim.cs" />
+    <Compile Include="Kimlik.cs" />
+    <Compile Include="Kisi.cs" />
+    <Compile Include="kur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kur.Designer.cs">
+      <DependentUpon>kur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteri.cs" />
+    <Compile Include="musteriEkle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="musteriEkle.Designer.cs">
+      <DependentUpon>musteriEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musteriSil.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="musteriSil.Designer.cs">
+      <DependentUpon>musteriSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="paraCek.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="paraCek.designer.cs">
+      <DependentUpon>paraCek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="paraYatir.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="paraYatir.designer.cs">
+      <DependentUpon>paraYatir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TicariMusteri.cs" />
+    <Compile Include="uHesapOzeti.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uHesapOzeti.designer.cs">
+      <DependentUpon>uHesapOzeti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yonetici.cs" />
+    <EmbeddedResource Include="frmGiris.resx">
+      <DependentUpon>frmGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMusteri.resx">
+      <DependentUpon>frmMusteri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMusteriGiris.resx">
+      <DependentUpon>frmMusteriGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUye.resx">
+      <DependentUpon>frmUye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmYonetici.resx">
+      <DependentUpon>frmYonetici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmYoneticiGiris.resx">
+      <DependentUpon>frmYoneticiGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gelirGiderRaporu.resx">
+      <DependentUpon>gelirGiderRaporu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="havaleYap.resx">
+      <DependentUpon>havaleYap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hesapEkle.resx">
+      <DependentUpon>hesapEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hesapSil.resx">
+      <DependentUpon>hesapSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kur.resx">
+      <DependentUpon>kur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteriEkle.resx">
+      <DependentUpon>musteriEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteriSil.resx">
+      <DependentUpon>musteriSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="paraCek.resx">
+      <DependentUpon>paraCek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="paraYatir.resx">
+      <DependentUpon>paraYatir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uHesapOzeti.resx">
+      <DependentUpon>uHesapOzeti.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\closeButton.png" />
+    <None Include="Resources\closeButtonDark.png" />
+    <None Include="Resources\minimizeButton.png" />
+    <None Include="Resources\minimizeButtonDark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bank-building.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clean.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\homepage.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
